@@ -1,0 +1,38 @@
+.datav-container {
+  height: 100%;
+  .datav-header {
+    height: 40px;
+    background: #212528;
+  }
+
+  .datav-main {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 40px);
+    min-height: 800px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .datav-charts {
+      width: 250px;
+      height: 100%;
+    }
+    .datav-canvas {
+      width: 100%;
+    }
+    .datav-config {
+      width: 480px;
+      height: 100%;
+      background: #2d3236;
+      transition: all 0.2s ease-in;
+    }
+  }
+
+  .datav-preview {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1024;
+  }
+}

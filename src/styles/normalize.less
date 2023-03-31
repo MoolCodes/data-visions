@@ -1,0 +1,167 @@
+/*清除默认样式*/
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+/**修改全局的滚动条*/
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+//滚动条的滑块
+::-webkit-scrollbar-thumb {
+  background-color: #d9d9db;
+  border-radius: 5px;
+}
+
+fieldset,
+img,
+input,
+button {
+  border: 0 none;
+  padding: 0;
+  margin: 0;
+  outline-style: none;
+}
+
+/*去掉input等聚焦时的蓝色边框*/
+input {
+  outline: none;
+}
+
+/* 去掉列表的列表的项目符号 */
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+/* 行内元素的垂直居中 */
+/*
+vertical-align：top
+
+*/
+select,
+input {
+  vertical-align: middle;
+}
+
+/*select, input, textarea { font-size:12px; margin:0; }*/
+/*防止拖动*/
+textarea {
+  resize: none;
+}
+
+/*  去掉图片低测默认的3-4像素空白缝隙，或者用display：block也可以*/
+/* table { border-collapse:collapse; } */
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*万能清除浮动法*/
+.clearfix::after {
+  content: ' ';
+  display: block;
+  height: 0px;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 1em;
+}
+
+/* 设置h标签的大小，设置跟父亲一样大的字体font-size:100%; */
+
+s,
+i,
+em {
+  font-style: normal;
+  text-decoration: none;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.ac {
+  text-align: center;
+}
+
+.f12 {
+  font-size: 12px;
+}
+
+.f14 {
+  font-size: 14px;
+}
+
+.f16 {
+  font-size: 16px;
+}
+
+.el-menu--popup {
+  max-width: 480px;
+  min-width: 132px !important;
+  display: flex;
+  flex-wrap: wrap;
+  .item-box{
+    padding: 10px;
+    img{
+      width: 110px;
+      height: 70px;
+      border: 1px solid #212528;
+    }
+    .text{
+      text-align: center;
+      line-height: 25px;
+    }
+    img:hover{
+      border: 1px solid #006eff;
+    }
+  }
+  .item-box:hover{
+    color: #ffffff;
+  }
+}
+
+.el-menu-item {
+  height: auto !important;
+}

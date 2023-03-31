@@ -1,0 +1,74 @@
+//公共抽屉弹窗样式
+.common-drawer-style {
+  .el-drawer__open .el-drawer.rtl {
+    -webkit-animation: normal;
+    animation: normal;
+  }
+
+  .el-drawer__body {
+    overflow: auto;
+    padding: 10px 20px;
+  }
+
+  .el-drawer__header {
+    border-bottom: 1px solid #eee;
+    padding: 10px 20px;
+  }
+
+  #el-drawer__title {
+    margin: 0;
+    line-height: 24px;
+    text-align: center;
+    font-size: 18px;
+    color: #303133;
+    font-weight: 600;
+  }
+}
+
+//公共dialog弹窗样式
+.common-dialog-style {
+  .el-dialog {
+    background: rgb(49, 49, 49);
+    box-shadow: 0 2px 8px 0 rgba(255, 255, 255, 0.2);
+  }
+  .el-dialog--center .el-dialog__body {
+    padding: 15px 20px;
+  }
+
+  .el-dialog__header {
+    padding: 10px;
+    border-bottom: solid 1px #585858;
+  }
+
+  .el-dialog__title {
+    color: #ffffff;
+  }
+
+  .el-dialog__headerbtn {
+    display: none;
+  }
+}
+
+//公共配置表单样式
+.common-config-form {
+  box-sizing: border-box;
+  .el-input__inner {
+    font-size: 12px;
+  }
+  //折叠菜单
+  .el-collapse {
+    border: none !important;
+    .el-collapse-item__header {
+      background: #2d3236;
+      color: #ffffff;
+      border-bottom: 1px solid #282e3a;
+    }
+    .el-collapse-item__wrap {
+      background: #000000;
+      border-bottom: none;
+    }
+    .el-collapse-item__header {
+      height: 30px;
+    }
+  }
+}
